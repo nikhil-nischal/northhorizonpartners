@@ -1,4 +1,4 @@
-# Glintaro — Website Copy
+# North Horizon Partners — Website Copy
 
 All copy organized by section. Update here and reflect changes in index.html.
 
@@ -6,7 +6,7 @@ All copy organized by section. Update here and reflect changes in index.html.
 
 ## Browser Tab
 
-**Title:** Glintaro | Introductions that move business forward
+**Title:** Horizon Partners | Introductions that move business forward
 
 **Meta description:** We connect decision-makers when timing, relevance, and fit are already aligned. Not cold email. Not lead gen. Introductions that create real business relationships.
 
@@ -14,11 +14,11 @@ All copy organized by section. Update here and reflect changes in index.html.
 
 ## Section 1 — Navigation
 
-**Logo:** Glintaro (wordmark, no tagline)
+**Logo:** Horizon Partners (wordmark, no tagline)
 
 **Nav links:**
 - How We Work
-- Why Glintaro
+- Why Us
 - FAQ
 
 **CTA button:** Book a Strategy Call
@@ -84,7 +84,7 @@ Proximity creates conversations.
 
 ### Comparison table
 
-| How most outreach works | How Glintaro works |
+| How most outreach works | How Horizon Partners works |
 |-------------------------|-------------------|
 | Build lists of strangers, send sequences, hope for replies | Identify where relevant conversations are already happening |
 | Generic messages to anyone who fits a job title | Introductions shaped around why this specific conversation matters now |
@@ -297,6 +297,6 @@ Nothing. You don't buy, install, or manage anything. We handle the infrastructur
 
 ## Section 14 — Footer
 
-- © 2026 Glintaro
-- nick@glintaro.com
+- © 2026 North Horizon Partners LLC
+- nick@northhorizonpartners.com
 - Privacy · Terms

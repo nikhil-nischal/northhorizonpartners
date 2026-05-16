@@ -1,5 +1,5 @@
 /* ============================================================
-   GLINTARO — app.js
+   NORTH HORIZON PARTNERS — app.js
    All interactive behavior. Requires Lenis CDN loaded first.
    ============================================================ */
 
