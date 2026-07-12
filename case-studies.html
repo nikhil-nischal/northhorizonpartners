@@ -36,7 +36,7 @@
   <style>
     /* index-specific: logo strip on cards */
     .cs-card-logo {
-      height: 26px;
+      height: 32px;
       width: auto;
       max-width: 170px;
       object-fit: contain;
@@ -44,6 +44,16 @@
       margin-top: 1rem;
       opacity: 0.8;
       filter: brightness(0) invert(0.92);
+    }
+    .cs-card-logo.logo-raw { filter: none; opacity: 0.95; }
+    .cs-wordmark {
+      display: inline-block;
+      margin-top: 1.1rem;
+      font-size: 1.05rem;
+      font-weight: 700;
+      letter-spacing: 0.24em;
+      color: var(--text);
+      opacity: 0.85;
     }
     .cs-card-founder {
       margin-top: 1rem;
@@ -149,7 +159,7 @@
           <span class="cs-result">6 introductions in 120 days</span>
           <span class="cs-client">Clean-Seas West Virginia</span>
           <span class="cs-brief">Feedstock, offtake, and infrastructure introductions for a plastic-conversion facility in a slow, conservative market.</span>
-          <img class="cs-card-logo" src="images/logos/clean-seas.png" alt="Clean-Seas logo">
+          <img class="cs-card-logo logo-raw" src="images/logos/clean-seas.png" alt="Clean-Seas logo">
           <span class="cs-more">Read the story →</span>
         </a>
 
@@ -158,6 +168,7 @@
           <span class="cs-result">3 introductions in 43 days</span>
           <span class="cs-client">RESPILON</span>
           <span class="cs-brief">Signal-led routing opened qualified commercial conversations for a nanofiber technology company with a wide market surface.</span>
+          <span class="cs-wordmark">RESPILON</span>
           <span class="cs-more">Read the story →</span>
         </a>
 
@@ -166,7 +177,7 @@
           <span class="cs-result">+$85K in one quarter</span>
           <span class="cs-client">Vention</span>
           <span class="cs-brief">Pain-point-driven outbound replaced expensive PPC prospecting and put the sales team on high-intent accounts.</span>
-          <img class="cs-card-logo" src="images/logos/vention-alt.png" alt="Vention logo">
+          <img class="cs-card-logo" src="images/logos/vention.svg" alt="Vention logo">
           <span class="cs-more">Read the story →</span>
         </a>
 
@@ -193,6 +204,7 @@
           <span class="cs-result">+€70K in three months</span>
           <span class="cs-client">ForPlayers</span>
           <span class="cs-brief">Sponsor and partner outreach turned into €70,000 of new revenue in three months.</span>
+          <img class="cs-card-logo logo-raw" src="images/logos/forplayers-mono.webp" alt="ForPlayers logo">
           <span class="cs-more">Read the story →</span>
         </a>
 
@@ -201,7 +213,7 @@
           <span class="cs-result">5 new clients in 48 days</span>
           <span class="cs-client">FabuLingua</span>
           <span class="cs-brief">Five new clients on an $8,288 investment, without burning more ad budget.</span>
-          <img class="cs-card-logo" src="images/logos/fabulingua-alt.avif" alt="FabuLingua logo">
+          <img class="cs-card-logo logo-raw" src="images/logos/fabulingua-circle.png" alt="FabuLingua logo" style="height:40px">
           <span class="cs-more">Read the story →</span>
         </a>
 
@@ -210,7 +222,7 @@
           <span class="cs-result">4 key clients secured</span>
           <span class="cs-client">HelpCare AI</span>
           <span class="cs-brief">Strategic introductions to the exact healthcare decision-makers who needed the product.</span>
-          <img class="cs-card-logo" src="images/logos/helpcare-ai-alt.avif" alt="HelpCare AI logo">
+          <span class="cs-wordmark" style="letter-spacing:0.18em">HELPCARE AI</span>
           <span class="cs-more">Read the story →</span>
         </a>
 
@@ -219,6 +231,7 @@
           <span class="cs-result">4 introductions in 78 days</span>
           <span class="cs-client">Lasting Blueprint Productions</span>
           <span class="cs-brief">Repositioned from "we do video" to documenting business activity already happening; qualified introductions followed.</span>
+          <span class="cs-wordmark" style="letter-spacing:0.14em">LASTING BLUEPRINT</span>
           <span class="cs-more">Read the story →</span>
         </a>
 

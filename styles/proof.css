@@ -276,6 +276,9 @@
 
 .team-card:hover { border-color: var(--border-strong); }
 
+.team-card.no-photo { display: flex; }
+.team-card.no-photo .team-info { margin: auto 0; padding-block: 2rem; }
+
 .team-photo {
   width: 100%;
   aspect-ratio: 4 / 4.3;
