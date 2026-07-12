@@ -32,6 +32,7 @@ The blue appears in: CTAs, section labels, flagship table row, journey highlight
 - [x] One page per case study: 13 pages in case_study/ (Noble + 12), each with breadcrumb, category chips, summary, hero stat, founder photo or logo, meta bar, About / Objective / What we did / Outcome, prev-next nav
 - [x] case-studies.html converted to an index hub (logos, founder chips, links to pages)
 - [x] Assets: images/founders (3 photos), images/logos (11 client logos, white-normalized via CSS filter; ForPlayers and Lasting Blueprint dropped as unrenderable, RESPILON unavailable), images/covers (7)
+- [x] /core-thesis route: unlisted (noindex, no nav link), redirects straight to the capabilities deck PDF (core-thesis/north-horizon-core-thesis.pdf, ghostscript-compressed 8.6MB to 720KB). Re-copy + re-compress from north-horizon-deck-html/north-horizon-deck.pdf whenever the deck changes
 
 ## Still open / owner decisions
 
