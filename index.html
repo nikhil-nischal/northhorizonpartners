@@ -3,11 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Horizon Partners | Introductions that move business forward</title>
-  <meta name="description" content="We connect decision-makers when timing, relevance, and fit are already aligned. Not cold email. Not lead gen. Introductions that create real business relationships.">
+  <title>North Horizon Partners | Introductions that move business forward</title>
+  <meta name="description" content="North Horizon Partners opens the doors behind your largest deals: qualified introductions with the right decision-makers, delivered onto your calendar. From wealth managers to a FINRA-registered investment bank.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="North Horizon Partners">
+  <meta property="og:description" content="Introductions that convert. Conversations that compound. Qualified introductions for high-value B2B firms.">
+  <meta property="og:image" content="https://northhorizonpartners.com/images/og-cover.png">
+  <meta property="og:url" content="https://northhorizonpartners.com/">
+  <meta name="twitter:card" content="summary_large_image">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" href="images/logo.png">
 
   <!-- Fonts -->
   <link rel="stylesheet" href="fonts.css">
@@ -23,6 +31,7 @@
   <link rel="stylesheet" href="styles/hero.css">
   <link rel="stylesheet" href="styles/trust.css">
   <link rel="stylesheet" href="styles/sections.css">
+  <link rel="stylesheet" href="styles/proof.css">
   <link rel="stylesheet" href="styles/how.css">
   <link rel="stylesheet" href="styles/manifesto.css">
   <link rel="stylesheet" href="styles/faq.css">
@@ -37,7 +46,7 @@
   <!-- ========== NAVIGATION ========== -->
   <header id="site-nav">
     <nav class="container nav-inner">
-      <a href="#" class="logo">Horizon Partners</a>
+      <a href="#" class="logo"><img src="images/logo.png" alt="" aria-hidden="true">North Horizon Partners</a>
 
       <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
         <span></span>
@@ -45,8 +54,10 @@
       </button>
 
       <ul class="nav-links" role="list">
-        <li><a href="#how-we-work">How We Work</a></li>
-        <li><a href="#why-us">Why Us</a></li>
+        <li><a href="#track-record">Track Record</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="#origination-system">How It Works</a></li>
+        <li><a href="#team">Team</a></li>
         <li><a href="#faq">FAQ</a></li>
         <li class="nav-mobile-cta-item">
           <a href="https://cal.com/ni.ck/access-call" data-cal class="btn btn-primary" target="_blank" rel="noopener noreferrer">Book a Strategy Call</a>
@@ -70,16 +81,16 @@
 
         <h1 class="hero-headline fi d1">
           Introductions that convert.<br>
-          Conversations that compound.
+          Conversations that <em>compound</em>.
         </h1>
 
         <p class="hero-sub fi d2">
-          We connect the right people at the right moment, when timing, intent, and relevance are already aligned. That proximity has already created $2M+ in closed revenue.
+          We open the doors behind your largest deals: the right decision-makers, at the right moment, introduced with context. From wealth managers to a FINRA-registered investment bank.
         </p>
 
         <div class="hero-actions fi d3">
           <a href="https://cal.com/ni.ck/access-call" data-cal class="btn btn-primary btn-large" target="_blank" rel="noopener noreferrer">Book a Strategy Call →</a>
-          <a href="#how-we-work" class="text-link">See how we work ↓</a>
+          <a href="#track-record" class="text-link">See the track record ↓</a>
         </div>
 
       </div>
@@ -89,29 +100,31 @@
     <section class="section-trust" aria-label="Key metrics">
       <div class="container">
         <div class="trust-bar">
+          <div class="trust-metric fi">
+            <span class="trust-number">4+</span>
+            <span class="trust-label">years operating</span>
+          </div>
           <div class="trust-metric fi d1">
-            <span class="trust-number">$2M+</span>
-            <span class="trust-label">closed revenue from introductions</span>
+            <span class="trust-number">$1B+</span>
+            <span class="trust-label">opportunity value sourced</span>
           </div>
-          <div class="trust-divider" aria-hidden="true"></div>
           <div class="trust-metric fi d2">
-            <span class="trust-number">2 weeks</span>
-            <span class="trust-label">to first introduction, post warmup</span>
+            <span class="trust-number">$10M+</span>
+            <span class="trust-label">client transactions supported</span>
           </div>
-          <div class="trust-divider" aria-hidden="true"></div>
           <div class="trust-metric fi d3">
-            <span class="trust-number">&lt;2%</span>
-            <span class="trust-label">unsubscribe rate</span>
+            <span class="trust-number">8+</span>
+            <span class="trust-label">industries served</span>
           </div>
         </div>
-        <p class="trust-proof fi d4">Trusted by founders and operators across B2B.</p>
+        <p class="trust-proof fi d4">Numbers our clients can diligence. <strong>Detailed case studies on request.</strong></p>
       </div>
     </section>
 
     <!-- ========== THE GAP ========== -->
     <section class="section-gap">
       <div class="container">
-        <span class="section-label fi">THE GAP</span>
+        <span class="section-label fi">The Gap</span>
         <h2 class="fi d1">You don't have a reach problem.<br>You have a proximity problem.</h2>
         <div class="gap-body fi d2">
           <p>Right now, someone is making a decision about the exact problem you solve. They have budget. They have urgency. They'd genuinely benefit from hearing what you do.</p>
@@ -124,12 +137,12 @@
     </section>
 
     <!-- ========== THE DIFFERENCE ========== -->
-    <section class="section-difference">
+    <section class="section-difference section-alt">
       <div class="container">
-        <span class="section-label fi">THE DIFFERENCE</span>
+        <span class="section-label fi">The Difference</span>
         <h2 class="fi d1">Volume creates noise.<br>Proximity creates conversations.</h2>
 
-        <div class="comparison-table fi d2" role="table" aria-label="How most outreach works vs. how Horizon Partners works">
+        <div class="comparison-table fi d2" role="table" aria-label="How most outreach works vs. how North Horizon Partners works">
           <div class="comparison-col comp-left" role="rowgroup">
             <div class="comparison-header" role="columnheader">How most outreach works</div>
             <div class="comparison-row" role="cell">Build lists of strangers, send sequences, hope for replies</div>
@@ -140,7 +153,7 @@
             <div class="comparison-row" role="cell">You're a name in someone's inbox</div>
           </div>
           <div class="comparison-col comp-right" role="rowgroup">
-            <div class="comparison-header" role="columnheader">How Horizon Partners works</div>
+            <div class="comparison-header" role="columnheader">How North Horizon Partners works</div>
             <div class="comparison-row" role="cell">Identify where relevant conversations are already happening</div>
             <div class="comparison-row" role="cell">Introductions shaped around why this specific conversation matters now</div>
             <div class="comparison-row" role="cell">High relevance, high intent</div>
@@ -152,10 +165,238 @@
       </div>
     </section>
 
+    <!-- ========== TRACK RECORD ========== -->
+    <section id="track-record" class="section-track">
+      <div class="container">
+        <span class="section-label fi">Track Record</span>
+        <h2 class="fi d1">Results that survive due diligence.</h2>
+
+        <div class="tr-layout">
+          <div class="fi d2">
+            <table class="tr-table">
+              <thead>
+                <tr>
+                  <th>Client</th>
+                  <th>Sector</th>
+                  <th>Outcome</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="tr-flagship">
+                  <td class="tr-client">NOBLE Capital Markets</td>
+                  <td class="tr-sector">Investment banking / M&amp;A</td>
+                  <td>Sell-side mandate signed ($2.6M EBITDA) · 10+ owner introductions</td>
+                </tr>
+                <tr>
+                  <td class="tr-client">Regent Peak Wealth Advisors</td>
+                  <td class="tr-sector">Wealth management</td>
+                  <td>6 high-net-worth introductions in 45 days</td>
+                </tr>
+                <tr>
+                  <td class="tr-client">Clean-Seas West Virginia</td>
+                  <td class="tr-sector">Industrial technology</td>
+                  <td>6 commercial introductions in 120 days</td>
+                </tr>
+                <tr>
+                  <td class="tr-client">Vention</td>
+                  <td class="tr-sector">Manufacturing automation</td>
+                  <td>$85K added in under 60 days</td>
+                </tr>
+                <tr>
+                  <td class="tr-client">Connect Group</td>
+                  <td class="tr-sector">AI talent / recruitment</td>
+                  <td>$105K added in one quarter</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <p class="tr-total"><strong>$10M+</strong> in client transactions supported across 8+ industries.</p>
+            <p class="tr-diligence">Full case studies open during diligence.</p>
+          </div>
+
+          <div class="tr-who fi d3">
+            <h3>Where this works best</h3>
+            <p class="tr-who-intro">Built for B2B firms with meaningful deal sizes, where one right conversation can carry a quarter:</p>
+            <ul class="tr-who-list" role="list">
+              <li>Investment banks, M&amp;A advisories &amp; capital-markets firms</li>
+              <li>Consulting &amp; professional-services firms</li>
+              <li>Commercial insurance &amp; financial services</li>
+              <li>Industrial services, equipment &amp; manufacturing</li>
+              <li>Enterprise software &amp; technology services</li>
+              <li>Agencies with large recurring engagements</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FLAGSHIP MANDATE (NOBLE) ========== -->
+    <section class="section-noble section-alt">
+      <div class="container">
+        <span class="section-label fi">Flagship Mandate</span>
+        <h2 class="fi d1">We book the hardest meeting in B2B.</h2>
+
+        <div class="noble-card fi d2">
+          <div class="noble-head">
+            <img class="noble-logo" src="images/noble-logo.png" alt="Noble">
+            <span class="noble-client">Capital Markets</span>
+            <span class="noble-pill">Investment Banking / M&amp;A</span>
+          </div>
+
+          <div class="noble-cols">
+            <div>
+              <div class="noble-h">The ask</div>
+              <p class="noble-body">NOBLE Capital Markets, a FINRA-registered investment bank, wanted consistent sell-side deal flow in the industrial segment. The people they needed to reach: private business owners willing to discuss selling the company they built.</p>
+              <p class="noble-body">Banker hours are too expensive to spend prospecting for that conversation.</p>
+            </div>
+            <div>
+              <div class="noble-h">What we did</div>
+              <p class="noble-body">We ran the full Origination System on their behalf: mapped the owner universe, qualified every account before first touch, ran multi-channel outreach anchored to real transaction comps, and reviewed pipeline with the deal team every two weeks.</p>
+            </div>
+          </div>
+
+          <div class="noble-results">
+            <div class="noble-h">What came back</div>
+            <div class="noble-result-grid">
+              <div class="noble-result"><span class="noble-check">&#10003;</span>Sell-side mandate signed with a $2.6M-EBITDA business</div>
+              <div class="noble-result"><span class="noble-check">&#10003;</span>10+ owner introductions delivered</div>
+              <div class="noble-result"><span class="noble-check">&#10003;</span>3+ opportunities in active pipeline</div>
+              <div class="noble-result"><span class="noble-check">&#10003;</span>5+ long-term owner relationships opened</div>
+            </div>
+          </div>
+
+          <p class="noble-close">If it opens doors for M&amp;A bankers, it will open doors for you.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CASE STUDIES (BRIEF) ========== -->
+    <section id="case-studies" class="section-casestudies">
+      <div class="container">
+        <span class="section-label fi">Case Studies</span>
+        <h2 class="fi d1">How it plays out in the field.</h2>
+
+        <div class="cs-grid">
+          <a class="cs-card fi" href="case-studies.html#regent-peak-wealth-advisors">
+            <span class="cs-niche">Wealth management</span>
+            <span class="cs-result">6 introductions in 45 days</span>
+            <span class="cs-client">Regent Peak Wealth Advisors</span>
+            <span class="cs-brief">Qualified high-net-worth introductions sourced strictly through the firm's existing ideal client profile.</span>
+            <span class="cs-more">Read the case study →</span>
+          </a>
+          <a class="cs-card fi" href="case-studies.html#clean-seas-west-virginia">
+            <span class="cs-niche">Industrial technology</span>
+            <span class="cs-result">6 introductions in 120 days</span>
+            <span class="cs-client">Clean-Seas West Virginia</span>
+            <span class="cs-brief">Feedstock, offtake, and infrastructure introductions for a plastic-conversion facility in a slow, conservative market.</span>
+            <span class="cs-more">Read the case study →</span>
+          </a>
+          <a class="cs-card fi" href="case-studies.html#vention">
+            <span class="cs-niche">Manufacturing automation</span>
+            <span class="cs-result">$85K in one quarter</span>
+            <span class="cs-client">Vention</span>
+            <span class="cs-brief">Pain-point-driven outbound replaced expensive PPC prospecting and put the sales team on high-intent accounts.</span>
+            <span class="cs-more">Read the case study →</span>
+          </a>
+          <a class="cs-card fi" href="case-studies.html#connect-group">
+            <span class="cs-niche">AI talent recruitment</span>
+            <span class="cs-result">$105K in one quarter</span>
+            <span class="cs-client">Connect Group</span>
+            <span class="cs-brief">A rebuilt outbound system and pipeline process drove new placement revenue in a single quarter.</span>
+            <span class="cs-more">Read the case study →</span>
+          </a>
+          <a class="cs-card fi" href="case-studies.html#elate-staffing-solutions">
+            <span class="cs-niche">Industrial recruitment</span>
+            <span class="cs-result">22 placements in 55 days</span>
+            <span class="cs-client">Elate Staffing Solutions</span>
+            <span class="cs-brief">Automated targeting and live-vacancy triggers lifted conversions 50% over the previous manual process.</span>
+            <span class="cs-more">Read the case study →</span>
+          </a>
+          <a class="cs-card fi" href="case-studies.html#hippocratic-ai">
+            <span class="cs-niche">Healthcare technology</span>
+            <span class="cs-result">2 partnerships in 60 days</span>
+            <span class="cs-client">Hippocratic AI</span>
+            <span class="cs-brief">Focused outreach to hospital decision-makers produced $35,000 in partnership deals in two months.</span>
+            <span class="cs-more">Read the case study →</span>
+          </a>
+        </div>
+
+        <a href="case-studies.html" class="btn btn-primary cs-all-link fi">View all case studies →</a>
+      </div>
+    </section>
+
+    <!-- ========== HOW IT WORKS ========== -->
+    <section id="origination-system" class="section-how section-alt">
+      <div class="container">
+        <span class="section-label fi">How It Works</span>
+        <h2 class="fi d1">The Origination System.</h2>
+        <p class="section-intro fi d2">Most agencies start by sending. We start by deciding who deserves a conversation: six stages, run in-house, that turn a market into a pipeline of warm introductions.</p>
+
+        <div class="stages-grid">
+          <div class="stage fi">
+            <span class="stage-num">01</span>
+            <h3>Discover</h3>
+            <p>We assemble the complete universe of companies that could buy from you, pulled from multiple sources and verified.</p>
+          </div>
+          <div class="stage fi d1">
+            <span class="stage-num">02</span>
+            <h3>Enrich</h3>
+            <p>Every account gets real data behind it: firmographics, buying triggers, comparable transactions.</p>
+          </div>
+          <div class="stage fi d2">
+            <span class="stage-num">03</span>
+            <h3>Map</h3>
+            <p>We identify the people who own the problem and the people who sign.</p>
+          </div>
+          <div class="stage fi">
+            <span class="stage-num">04</span>
+            <h3>Assess</h3>
+            <p>AI scores every account against your ideal profile before anyone is contacted. Poor fits never hear from us.</p>
+          </div>
+          <div class="stage fi d1">
+            <span class="stage-num">05</span>
+            <h3>Nurture</h3>
+            <p>Multi-channel conversations built on concrete triggers, tested against each other weekly.</p>
+          </div>
+          <div class="stage fi d2">
+            <span class="stage-num">06</span>
+            <h3>Deliver</h3>
+            <p>A human qualifies every response, calls while interest is live, and books it to your calendar with context.</p>
+          </div>
+        </div>
+
+        <div class="journey">
+          <div class="journey-step fi">
+            <span class="journey-when">Weeks 1–2</span>
+            <h3>Map &amp; qualify</h3>
+            <p>Your market charted and every account scored before anyone is contacted.</p>
+          </div>
+          <div class="journey-step fi d1">
+            <span class="journey-when">Weeks 2–4</span>
+            <h3>Build</h3>
+            <p>Dedicated outreach infrastructure, fully separate from your corporate email, plus messaging built from market evidence.</p>
+          </div>
+          <div class="journey-step accent fi d2">
+            <span class="journey-when">Weeks 4–6</span>
+            <h3>First introductions</h3>
+            <p>Live across email, phone, and LinkedIn. Winning angles scale; losing ones get killed.</p>
+          </div>
+          <div class="journey-step fi d3">
+            <span class="journey-when">Quarter one onward</span>
+            <h3>Compound</h3>
+            <p>Bi-weekly reviews feed learnings back into targeting. Month four outperforms month one.</p>
+          </div>
+        </div>
+
+        <p class="steps-note fi">First introductions typically arrive within two weeks of infrastructure warmup completing.</p>
+        <a href="https://cal.com/ni.ck/access-call" data-cal class="btn btn-primary fi" target="_blank" rel="noopener noreferrer">Book a Strategy Call →</a>
+      </div>
+    </section>
+
     <!-- ========== THE COST OF GETTING IT WRONG ========== -->
     <section class="section-cost">
       <div class="container">
-        <span class="section-label fi">THE REALITY</span>
+        <span class="section-label fi">The Reality</span>
         <h2 class="fi d1">What happens when outreach is built on volume instead of relevance.</h2>
         <p class="section-intro fi d2">Even well-intentioned growth efforts fail when the model is wrong. These are the quiet costs most companies don't notice until they've already paid them.</p>
 
@@ -188,55 +429,10 @@
       </div>
     </section>
 
-    <!-- ========== HOW WE WORK ========== -->
-    <section id="how-we-work" class="section-how">
-      <div class="container">
-        <span class="section-label fi">HOW WE WORK</span>
-        <h2 class="fi d1">Built around relevance, not volume.</h2>
-
-        <div class="steps">
-          <div class="step fi d1">
-            <span class="step-number" aria-hidden="true">01</span>
-            <div class="step-content">
-              <h3>We learn what a great conversation looks like for you</h3>
-              <p>It starts with understanding. Who you work with best, what problems you solve, and what makes a conversation worth having. Not a form. A real conversation where we learn your business the way a partner would.</p>
-            </div>
-          </div>
-
-          <div class="step fi d2">
-            <span class="step-number" aria-hidden="true">02</span>
-            <div class="step-content">
-              <h3>We find where those conversations are already happening</h3>
-              <p>We don't build cold lists. We identify real people in real companies who are actively making decisions about the problem you solve. When the timing is right and the fit is genuine, that's when we move.</p>
-            </div>
-          </div>
-
-          <div class="step step-accent fi d3">
-            <span class="step-number" aria-hidden="true">03</span>
-            <div class="step-content">
-              <h3>We make the introduction</h3>
-              <p>Every introduction comes with context. Who you are, why this matters, and why now. You're not showing up cold. You're entering a conversation that was already underway, positioned as someone worth hearing from.</p>
-            </div>
-          </div>
-
-          <div class="step fi d4">
-            <span class="step-number" aria-hidden="true">04</span>
-            <div class="step-content">
-              <h3>You take it from here</h3>
-              <p>The meeting is yours. The relationship is yours. And because the conversation started with relevance instead of volume, it tends to go further, faster. Meanwhile, the network we've built for you keeps growing.</p>
-            </div>
-          </div>
-        </div>
-
-        <p class="steps-note fi">Most introductions happen within the first week.</p>
-        <a href="https://cal.com/ni.ck/access-call" data-cal class="btn btn-primary fi" target="_blank" rel="noopener noreferrer">Book a Strategy Call →</a>
-      </div>
-    </section>
-
     <!-- ========== WHAT CHANGES ========== -->
-    <section id="why-us" class="section-changes">
+    <section id="why-us" class="section-changes section-alt">
       <div class="container">
-        <span class="section-label fi">WHAT CHANGES</span>
+        <span class="section-label fi">What Changes</span>
         <h2 class="fi d1">Better conversations. Less noise.</h2>
         <p class="section-intro fi d2">Here's what shifts when your outreach is built around proximity instead of volume.</p>
 
@@ -271,10 +467,56 @@
       </div>
     </section>
 
+    <!-- ========== TEAM ========== -->
+    <section id="team" class="section-team">
+      <div class="container">
+        <span class="section-label fi">The People</span>
+        <h2 class="fi d1">Senior on every engagement.</h2>
+
+        <div class="team-grid">
+          <div class="team-card fi">
+            <div class="team-photo"><img src="images/headshot-nikhil.png" alt="Nikhil Nischal"></div>
+            <div class="team-info">
+              <div class="team-name">Nikhil (Nick) Nischal<a href="https://www.linkedin.com/in/private-access-arch/" target="_blank" rel="noopener noreferrer"><img class="li" src="images/linkedin.png" alt="LinkedIn"></a></div>
+              <div class="team-title">Managing Partner</div>
+              <p class="team-bio">Founded North Horizon after four years building origination programs across finance and industry, most recently opening sell-side conversations for a FINRA-registered investment bank.</p>
+            </div>
+          </div>
+
+          <div class="team-card fi d1">
+            <div class="team-photo"><img src="images/headshot-saad.png" alt="Saad Belcaid"></div>
+            <div class="team-info">
+              <div class="team-name">Saad Belcaid<a href="https://www.linkedin.com/in/saadbelcaid/" target="_blank" rel="noopener noreferrer"><img class="li" src="images/linkedin.png" alt="LinkedIn"></a></div>
+              <div class="team-title">Partner, Market Strategy</div>
+              <p class="team-bio">Deep in wealth management and high-net-worth markets; has grown B2B demand programs into seven figures of revenue.</p>
+            </div>
+          </div>
+
+          <div class="team-card fi d2">
+            <div class="team-photo"><img src="images/headshot-shiv.png" alt="Shiv Shankar Prasad"></div>
+            <div class="team-info">
+              <div class="team-name">Shiv Shankar Prasad<a href="https://www.linkedin.com/in/shiv-shankar-prasad-994837421/" target="_blank" rel="noopener noreferrer"><img class="li" src="images/linkedin.png" alt="LinkedIn"></a></div>
+              <div class="team-title">Chief Operating Officer</div>
+              <p class="team-bio">Keeps every engagement running: systems, data quality, and delivery discipline behind each introduction.</p>
+            </div>
+          </div>
+
+          <div class="team-card fi d3">
+            <div class="team-photo"><img src="images/headshot-nita.png" alt="Nita D."></div>
+            <div class="team-info">
+              <div class="team-name">Nita D.<a href="https://www.linkedin.com/in/nita-d-63a8aa3a6/" target="_blank" rel="noopener noreferrer"><img class="li" src="images/linkedin.png" alt="LinkedIn"></a></div>
+              <div class="team-title">Director of Client Strategy</div>
+              <p class="team-bio">Your day-to-day partner: onboarding, feedback loops, and the pipeline reviews that keep quality high.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ========== WHAT WE BELIEVE ========== -->
     <section class="section-manifesto" aria-label="Our position">
       <div class="container">
-        <span class="section-label fi">OUR POSITION</span>
+        <span class="section-label fi">Our Position</span>
         <div class="manifesto-body">
           <p class="manifesto-opener fi d1">Most outreach is noise.</p>
           <p class="fi d2">More emails. Bigger lists. Faster sequences. An entire industry optimizing for volume, as if the problem was never sending enough messages.</p>
@@ -293,7 +535,7 @@
     <!-- ========== THE CRAFT ========== -->
     <section class="section-craft">
       <div class="container">
-        <span class="section-label fi">THE CRAFT</span>
+        <span class="section-label fi">The Craft</span>
         <h2 class="fi d1">Not a template. Not a blast. An introduction.</h2>
         <p class="section-intro fi d2">Every introduction we make follows the same principles. Not because we have a rigid process, but because these things matter when you're connecting real people about real decisions.</p>
 
@@ -319,16 +561,13 @@
             <p>The person receiving the introduction matters as much as the person we're introducing. If the conversation wouldn't be valuable for both sides, we don't make it. That's why response rates stay high and our reputation stays clean.</p>
           </article>
         </div>
-        <div class="craft-cta fi d4">
-          <a href="https://cal.com/ni.ck/access-call" data-cal class="btn btn-primary" target="_blank" rel="noopener noreferrer">Book a Strategy Call →</a>
-        </div>
       </div>
     </section>
 
     <!-- ========== FIT ========== -->
-    <section class="section-fit">
+    <section class="section-fit section-alt">
       <div class="container">
-        <span class="section-label fi">FIT</span>
+        <span class="section-label fi">Fit</span>
         <h2 class="fi d1">This works best when the fit is right.</h2>
 
         <div class="fit-grid">
@@ -360,7 +599,7 @@
     <!-- ========== FAQ ========== -->
     <section id="faq" class="section-faq">
       <div class="container">
-        <span class="section-label fi">COMMON QUESTIONS</span>
+        <span class="section-label fi">Common Questions</span>
         <h2 class="fi d1">Things people ask before we start working together.</h2>
 
         <div class="faq-list fi d2">
@@ -381,7 +620,7 @@
               <span class="faq-icon" aria-hidden="true">+</span>
             </button>
             <div class="faq-answer" role="region">
-              <p>Usually within the first week. We don't need months of setup because we're not building infrastructure from scratch. We're connecting you to conversations that are already happening.</p>
+              <p>The first two to three weeks are the build: your market mapped, every account qualified before first touch, and dedicated infrastructure warming up. First introductions typically arrive within two weeks after that warmup completes, and the engine compounds from there: month four outperforms month one.</p>
             </div>
           </div>
 
@@ -391,7 +630,7 @@
               <span class="faq-icon" aria-hidden="true">+</span>
             </button>
             <div class="faq-answer" role="region">
-              <p>One 45-minute call at the start. After that, everything is handled. You'll be notified when an introduction is made and when a conversation is ready for you. That's the extent of it.</p>
+              <p>One working session at the start with whoever owns revenue conversations: your ideal client, deal triggers, and objections. After that, a light feedback loop on early conversations in the first month, and a short pipeline review every two weeks. Everything else is handled.</p>
             </div>
           </div>
 
@@ -434,7 +673,7 @@
       <div class="container">
         <h2 class="fi d1">Great business relationships start with a conversation. Let's have one.</h2>
         <a href="https://cal.com/ni.ck/access-call" data-cal class="btn btn-primary btn-large fi d2" target="_blank" rel="noopener noreferrer">Book a Strategy Call →</a>
-        <p class="cta-sub fi d3">25 minutes. We'll talk about your business, who you want to reach, and whether our approach makes sense for you. No decks. No pressure.</p>
+        <p class="cta-sub fi d3">30 minutes. Your market, who you want in the room, and whether we're the right fit to get you there. No pressure.</p>
       </div>
     </section>
 
@@ -443,12 +682,9 @@
   <!-- ========== FOOTER ========== -->
   <footer class="site-footer">
     <div class="container footer-inner">
-      <span class="footer-copy">© 2026 North Horizon Partners LLC</span>
+      <span class="footer-brand"><img src="images/logo.png" alt="" aria-hidden="true">North Horizon Partners</span>
       <a href="#" data-email data-cfasync="false" class="footer-email"></a>
-      <div class="footer-links">
-        <a href="/privacy">Privacy</a>
-        <a href="/terms">Terms</a>
-      </div>
+      <span class="footer-copy">© 2026 North Horizon Partners LLC</span>
     </div>
   </footer>
 

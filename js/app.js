@@ -1,5 +1,5 @@
 /* ============================================================
-   NORTH HORIZON PARTNERS — app.js
+   NORTH HORIZON PARTNERS - app.js
    All interactive behavior. Requires Lenis CDN loaded first.
    ============================================================ */
 
@@ -22,7 +22,7 @@
 
 
   /* ──────────────────────────────────────────
-     CONTACT INFO — wire up Cal links from contact.js
+     CONTACT INFO - wire up Cal links from contact.js
   ────────────────────────────────────────── */
   if (globalThis.CONTACT) {
     var calLink = globalThis.CONTACT.calLink;
@@ -75,7 +75,7 @@
 
 
   /* ──────────────────────────────────────────
-     NAVBAR — scroll shadow
+     NAVBAR - scroll shadow
   ────────────────────────────────────────── */
   var nav = document.getElementById('site-nav');
 
@@ -188,7 +188,7 @@
 
 
   /* ──────────────────────────────────────────
-     SMOOTH SCROLL — anchor links
+     SMOOTH SCROLL - anchor links
      Uses Lenis when available, same easing as NHM.
   ────────────────────────────────────────── */
   document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {

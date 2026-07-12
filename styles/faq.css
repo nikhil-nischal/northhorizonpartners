@@ -1,94 +1,56 @@
 /* ============================================================
-   NORTH HORIZON PARTNERS — faq.css
+   NORTH HORIZON PARTNERS - faq.css
+   Hairline accordion.
    ============================================================ */
 
-.section-faq {
-  padding: var(--section-py) 0;
-}
-
-.section-faq h2 {
-  margin-bottom: 2rem;
-}
-
 .faq-list {
-  max-width: 760px;
-  margin-top: 3rem;
-  border-top: 1px solid var(--border-solid);
+  margin-top: 2.6rem;
+  max-width: 860px;
 }
 
-/* ── Item ───────────────────────────────────────────────────── */
 .faq-item {
-  border-bottom: 1px solid var(--border-solid);
-  border-radius: 6px;
-  transition: background 0.22s ease;
+  border-bottom: 1px solid var(--border);
 }
 
-.faq-item.open {
-  background: rgba(200, 255, 0, 0.025);
+.faq-item:first-child {
+  border-top: 1px solid var(--border);
 }
 
-/* ── Question button ────────────────────────────────────────── */
 .faq-question {
   width: 100%;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  align-items: center;
-  gap: 1.25rem;
-  padding: 1.5rem 0;
-  font-size: clamp(0.92rem, 1.4vw, 1rem);
-  font-weight: 500;
-  color: var(--text-muted);
+  gap: 1.5rem;
   text-align: left;
-  min-height: 44px;
-  transition: color 0.18s ease;
+  font-size: 1.0625rem;
+  font-weight: 600;
+  padding: 1.35rem 0;
+  transition: color 0.2s ease;
 }
 
-.faq-item.open .faq-question,
-.faq-question:hover {
-  color: var(--text);
-}
+.faq-question:hover { color: var(--accent-bright); }
 
-/* ── Icon circle ────────────────────────────────────────────── */
 .faq-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 26px;
-  height: 26px;
-  border-radius: 50%;
-  border: 1.5px solid var(--border-solid);
-  font-size: 1.1rem;
+  flex: none;
+  font-size: 1.3rem;
   font-weight: 300;
-  color: var(--text-dim);
-  flex-shrink: 0;
-  line-height: 1;
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
-              background 0.3s ease,
-              color 0.3s ease,
-              border-color 0.3s ease;
+  color: var(--accent-bright);
+  transition: transform 0.25s ease;
 }
 
-.faq-item.open .faq-icon {
-  transform: rotate(45deg);
-  background: var(--accent);
-  color: #080808;
-  border-color: var(--accent);
-}
+.faq-item.open .faq-icon { transform: rotate(45deg); }
 
-/* ── Answer ─────────────────────────────────────────────────── */
 .faq-answer {
-  overflow: hidden;
   max-height: 0;
-  transition: max-height 0.42s cubic-bezier(0.4, 0, 0.2, 1),
-              padding-bottom 0.42s ease;
-}
-
-.faq-item.open .faq-answer {
-  max-height: 600px;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
 }
 
 .faq-answer p {
-  padding-bottom: 1.6rem;
-  font-size: 0.93rem;
-  line-height: 1.84;
+  padding-bottom: 1.4rem;
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+  max-width: 66ch;
 }

@@ -1,6 +1,9 @@
 /* ============================================================
-   NORTH HORIZON PARTNERS — fonts.css
+   NORTH HORIZON PARTNERS - fonts.css
    All font imports and font-related base rules live here.
+   The website intentionally has its own type identity
+   (Playfair Display + DM Sans); the deck uses a different
+   system.
    ============================================================ */
 
 /* ── Google Fonts ──────────────────────────────────────────── */
@@ -9,43 +12,10 @@
 
 /* ── Font variables ────────────────────────────────────────── */
 /*
-  --font-serif  →  Playfair Display  (headlines, large display text, manifesto)
-  --font-sans   →  DM Sans           (body, labels, navigation, buttons, captions)
-
-  Playfair Display weights available:
-    400  regular
-    500  medium
-    600  semibold
-  Both roman and italic variants loaded.
-
-  DM Sans weights available:
-    300  light
-    400  regular
-    500  medium
-    600  semibold
-  Both roman and italic variants loaded.
+  --font-serif  →  Playfair Display  (headlines, display text, manifesto)
+  --font-sans   →  DM Sans           (body, labels, navigation, buttons)
 */
 :root {
   --font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
   --font-sans:  'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-}
-
-
-/* ── Base font assignment ──────────────────────────────────── */
-body {
-  font-family: var(--font-sans);
-}
-
-h1, h2 {
-  font-family: var(--font-serif);
-  font-weight: 500;
-}
-
-/* Trust bar numbers, step numbers, manifesto — all use the serif */
-.trust-number,
-.step-number,
-.principle-number,
-.manifesto-opener,
-.manifesto-anchor p {
-  font-family: var(--font-serif);
 }

@@ -1,0 +1,158 @@
+/* ============================================================
+   NORTH HORIZON PARTNERS - casedetail.css
+   Case-studies page: header, filter chips, detail blocks.
+   ============================================================ */
+
+.cs-page-header {
+  padding-top: calc(var(--nav-h) + clamp(4rem, 10vh, 7rem));
+  padding-bottom: clamp(3rem, 7vh, 5rem);
+  position: relative;
+  overflow: hidden;
+}
+
+.cs-page-header::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: -360px;
+  width: 1100px;
+  height: 640px;
+  transform: translateX(-50%);
+  background: radial-gradient(ellipse at center,
+              rgba(46, 107, 242, 0.18) 0%,
+              rgba(46, 107, 242, 0.05) 45%,
+              transparent 70%);
+  pointer-events: none;
+}
+
+.cs-page-header .container { position: relative; }
+
+.cs-page-sub {
+  margin-top: 1.4rem;
+  font-size: clamp(1.05rem, 1.6vw, 1.2rem);
+  line-height: 1.65;
+  color: var(--text-muted);
+  max-width: 58ch;
+}
+
+/* ── Detail blocks ────────────────────────────────────────── */
+
+.cs-detail-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: var(--section-py);
+}
+
+.cs-detail {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: clamp(1.8rem, 4vw, 2.8rem);
+  scroll-margin-top: calc(var(--nav-h) + 24px);
+}
+
+.cs-detail-head {
+  display: flex;
+  align-items: baseline;
+  gap: 1.4rem;
+  flex-wrap: wrap;
+  padding-bottom: 1.4rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.cs-detail-client {
+  font-family: var(--font-serif);
+  font-size: clamp(1.5rem, 2.6vw, 2rem);
+  font-weight: 600;
+}
+
+.cs-detail-niche {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.cs-detail-result {
+  margin-left: auto;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent-bright);
+  white-space: nowrap;
+}
+
+.cs-detail-cols {
+  margin-top: 1.6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.2rem;
+}
+
+.cs-detail h3 {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.cs-detail-cols p {
+  margin-top: 0.7rem;
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+}
+
+.cs-detail-results { margin-top: 1.8rem; }
+
+.cs-detail-results ul {
+  margin-top: 0.8rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.7rem 2.2rem;
+}
+
+.cs-detail-results li {
+  display: flex;
+  align-items: baseline;
+  gap: 0.7rem;
+  font-size: 0.9375rem;
+  line-height: 1.55;
+}
+
+.cs-detail-results li::before {
+  content: '\2713';
+  color: var(--accent-bright);
+  font-weight: 700;
+  flex: none;
+}
+
+/* flagship variant (Noble) */
+.cs-detail-flagship {
+  background: var(--accent-glow-soft);
+  border-color: var(--accent-border-soft);
+}
+
+.cs-detail-flagship .noble-logo-strip {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cs-detail-flagship .noble-logo-strip img {
+  height: 34px;
+  width: auto;
+  background: var(--paper);
+  border-radius: 6px;
+  padding: 5px 10px;
+}
+
+/* ── Responsive ───────────────────────────────────────────── */
+
+@media (max-width: 860px) {
+  .cs-detail-cols { grid-template-columns: 1fr; gap: 1.4rem; }
+  .cs-detail-results ul { grid-template-columns: 1fr; }
+  .cs-detail-result { margin-left: 0; }
+}

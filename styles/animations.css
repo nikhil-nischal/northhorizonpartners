@@ -1,23 +1,13 @@
 /* ============================================================
-   NORTH HORIZON PARTNERS — animations.css
-   Fade-in scroll system, keyframe animations.
+   NORTH HORIZON PARTNERS - animations.css
+   Scroll fade-in system (.fi → .in via IntersectionObserver in
+   app.js) plus the hero pulse dot. Restrained by design.
    ============================================================ */
 
-/* ── Fade-in scroll system ──────────────────────────────────── */
-/*
-  Usage: add class="fi" to any element you want to fade up on scroll.
-  Add d1/d2/d3/d4 for staggered reveal within the same group.
-
-  Example:
-    <span class="section-label fi">THE GAP</span>
-    <h2 class="fi d1">Headline</h2>
-    <p  class="fi d2">Body copy</p>
-*/
 .fi {
   opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.65s ease,
-              transform 0.65s ease;
+  transform: translateY(18px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
 }
 
 .fi.in {
@@ -25,45 +15,29 @@
   transform: translateY(0);
 }
 
-/* Staggered delays */
-.fi.d1 { transition-delay: 0.10s; }
-.fi.d2 { transition-delay: 0.20s; }
-.fi.d3 { transition-delay: 0.30s; }
-.fi.d4 { transition-delay: 0.40s; }
+/* stagger delays */
+.fi.d1 { transition-delay: 0.08s; }
+.fi.d2 { transition-delay: 0.16s; }
+.fi.d3 { transition-delay: 0.24s; }
+.fi.d4 { transition-delay: 0.32s; }
 
+/* grid children stagger inside card grids */
+.cards-grid .fi:nth-child(2) { transition-delay: 0.08s; }
+.cards-grid .fi:nth-child(3) { transition-delay: 0.16s; }
+.cards-grid .fi:nth-child(4) { transition-delay: 0.08s; }
+.cards-grid .fi:nth-child(5) { transition-delay: 0.16s; }
+.cards-grid .fi:nth-child(6) { transition-delay: 0.24s; }
 
-/* ── Keyframe animations ────────────────────────────────────── */
-
-/* Pulse ring — pill tag dot */
-@keyframes pulse-ring {
-  0%, 100% { transform: scale(1);   opacity: 0.35; }
-  50%       { transform: scale(2.2); opacity: 0; }
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%      { opacity: 0.35; transform: scale(0.75); }
 }
 
-/* Floating orb — hero center (slow, large) */
-@keyframes float-orb-center {
-  0%, 100% { transform: translateY(0); }
-  50%       { transform: translateY(-24px); }
-}
-
-/* Floating orb — hero side (slower, subtle) */
-@keyframes float-orb-side {
-  0%, 100% { transform: translateY(0); }
-  50%       { transform: translateY(-18px); }
-}
-
-
-/* ── Accessibility ──────────────────────────────────────────── */
 @media (prefers-reduced-motion: reduce) {
   .fi {
     opacity: 1;
     transform: none;
     transition: none;
   }
-
-  .section-hero::before,
-  .section-hero::after,
-  .pulse-dot::after {
-    animation: none;
-  }
+  .pulse-dot { animation: none; }
 }

@@ -1,52 +1,61 @@
 /* ============================================================
-   NORTH HORIZON PARTNERS — tokens.css
+   NORTH HORIZON PARTNERS - tokens.css
    Single source of truth for all design system values.
+   Website identity: deep night surfaces, the brand's royal
+   blue (from the logo, #2E6BF2) as the working accent, warm
+   off-white text. Deliberately distinct from the deck.
    ============================================================ */
 
 :root {
   /* ── Background ─────────────────────────────────────────── */
-  --bg:               #0A0A0A;
-  --bg-card:          #111111;
-  --bg-card-hover:    #161616;
-  --bg-alt:           #0D0D0D;
-  --bg-manifesto:     #0F0F0F;
+  --bg:               #0B0C0F;
+  --bg-alt:           #0E1013;
+  --bg-card:          #12141A;
+  --bg-card-hover:    #161923;
+  --bg-manifesto:     #0E1118;
 
   /* ── Text ───────────────────────────────────────────────── */
-  --text:             #F0EFE8;
-  --text-muted:       #8A8A82;
-  --text-dim:         #484840;
-  --text-light:       #333330;
+  --text:             #F1F0EA;
+  --text-muted:       #97989F;
+  --text-dim:         #4E5058;
 
-  /* ── Accent ─────────────────────────────────────────────── */
-  --accent:           #C8FF00;
-  --accent-glow:      rgba(200, 255, 0, 0.12);
-  --accent-glow-soft: rgba(200, 255, 0, 0.06);
-  --accent-border:    rgba(200, 255, 0, 0.18);
+  /* ── Accent (brand blue from the logo) ──────────────────── */
+  --accent:           #2E6BF2;
+  --accent-bright:    #4F83FF;
+  --accent-ink:       #FFFFFF;               /* text on accent */
+  --accent-glow:      rgba(46, 107, 242, 0.14);
+  --accent-glow-soft: rgba(46, 107, 242, 0.07);
+  --accent-border:    rgba(46, 107, 242, 0.35);
+  --accent-border-soft: rgba(46, 107, 242, 0.18);
 
-  /* ── Danger / negative column ───────────────────────────── */
-  --red-soft:         rgba(255, 75, 55, 0.06);
-  --red-border:       rgba(255, 75, 55, 0.12);
-  --red-icon:         #ff6b6b;
+  /* ── Paper moment (light cards on dark) ─────────────────── */
+  --paper:            #F4F3EE;
+  --paper-text:       #17181B;
+  --paper-muted:      #63656B;
+  --paper-rule:       rgba(23, 24, 27, 0.14);
+
+  /* ── Negative column tint ───────────────────────────────── */
+  --red-soft:         rgba(255, 92, 74, 0.05);
+  --red-border:       rgba(255, 92, 74, 0.12);
 
   /* ── Borders ────────────────────────────────────────────── */
-  --border:           rgba(255, 255, 255, 0.07);
-  --border-strong:    rgba(255, 255, 255, 0.12);
-  --border-solid:     rgba(255, 255, 255, 0.07);
+  --border:           rgba(241, 240, 234, 0.08);
+  --border-strong:    rgba(241, 240, 234, 0.15);
 
   /* ── Shadows ────────────────────────────────────────────── */
   --shadow-xs:        0 1px 2px  rgba(0, 0, 0, 0.25);
   --shadow-sm:        0 2px 8px  rgba(0, 0, 0, 0.35);
   --shadow-md:        0 4px 24px rgba(0, 0, 0, 0.45);
   --shadow-lg:        0 8px 48px rgba(0, 0, 0, 0.55);
-  --shadow-accent:    0 4px 20px rgba(200, 255, 0, 0.22);
+  --shadow-accent:    0 6px 24px rgba(46, 107, 242, 0.30);
 
   /* ── Typography ─────────────────────────────────────────── */
   --font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
   --font-sans:  'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 
-  --h1-line-height:     1.1;
+  --h1-line-height:     1.12;
   --h1-letter-spacing: -0.02em;
-  --h2-line-height:     1.12;
+  --h2-line-height:     1.14;
   --h2-letter-spacing: -0.015em;
   --h3-line-height:     1.3;
 
@@ -54,7 +63,7 @@
   --max-w:    1160px;
   --pad-x:    clamp(1.25rem, 5vw, 3rem);
   --nav-h:    68px;
-  --section-py: clamp(5rem, 9vw, 8rem);
+  --section-py: clamp(4.5rem, 8.5vw, 7.5rem);
 
   /* ── Radius ─────────────────────────────────────────────── */
   --radius:    8px;
