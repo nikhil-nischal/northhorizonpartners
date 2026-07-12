@@ -28,6 +28,10 @@ The blue appears in: CTAs, section labels, flagship table row, journey highlight
 - [x] Footer: brand + contact@northhorizonpartners.com (contact.js updated from nick@); dead /privacy /terms links removed
 - [x] OG meta + og-cover image, favicon = logo, page titles/descriptions
 - [x] Content sweep passed: no myoProcess/Glintaro/100xVoice, no em dashes, no "leads/closers/six-figure", no reply-rate promises
+- [x] Stories section on homepage (partner-site pattern): 3 featured stories with founder photos (Craig N. Robson, Fadi Jawish, Munjal Shah), narrative headlines, big stats, client logos
+- [x] One page per case study: 13 pages in case_study/ (Noble + 12), each with breadcrumb, category chips, summary, hero stat, founder photo or logo, meta bar, About / Objective / What we did / Outcome, prev-next nav
+- [x] case-studies.html converted to an index hub (logos, founder chips, links to pages)
+- [x] Assets: images/founders (3 photos), images/logos (11 client logos, white-normalized via CSS filter; ForPlayers and Lasting Blueprint dropped as unrenderable, RESPILON unavailable), images/covers (7)
 
 ## Still open / owner decisions
 
