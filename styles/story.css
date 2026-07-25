@@ -107,6 +107,13 @@
   object-position: 50% 25%;
 }
 
+.story-photo-wide {
+  width: 100%;
+  aspect-ratio: 1492 / 776;
+}
+
+.story-photo-wide img { object-position: center; }
+
 .story-person-name {
   margin-top: 1rem;
   font-size: 1rem;
@@ -266,6 +273,7 @@
 .sp-body {
   padding-block: clamp(2.5rem, 6vh, 4.5rem);
   max-width: 780px;
+  margin-inline: auto;
 }
 
 .sp-body h2 {
@@ -310,6 +318,43 @@
   flex: none;
 }
 
+.sp-proof {
+  margin: 1.6rem 0 0;
+}
+
+.sp-proof video,
+.sp-proof img {
+  display: block;
+  width: 100%;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+}
+
+.sp-proof video {
+  aspect-ratio: 16 / 9;
+  background: #000;
+}
+
+.sp-proof-row {
+  margin-top: 1.6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.sp-proof-row .sp-proof { margin: 0; }
+
+@media (max-width: 640px) {
+  .sp-proof-row { grid-template-columns: 1fr; gap: 1.6rem; }
+}
+
+.sp-proof figcaption {
+  margin-top: 0.7rem;
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+
 .sp-close {
   margin-top: 2.4rem;
   padding: 1.4rem 1.6rem;
@@ -329,6 +374,7 @@
   gap: 1.5rem;
   padding-bottom: 3.5rem;
   max-width: 780px;
+  margin-inline: auto;
 }
 
 .sp-nav a {
